@@ -1,0 +1,10 @@
+<section class="content-display">
+  <h3> Your <%= @location %> User Generated News</h3>
+  <ul>
+    <% @location.contents.each do |content| %>
+    <% content_url = content(params[:content_url]) %>
+    <% content_image = content(params[:image_url]) %>
+      <li><a href=<%= content_url %>><img src=<%= content_image %>></a></li>
+    <% end %>
+  </ul>
+</section>
