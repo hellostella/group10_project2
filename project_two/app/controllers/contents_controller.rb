@@ -9,7 +9,4 @@ class ContentsController < ApplicationController
   end 
 
 
-
-
-
 end
