@@ -1,0 +1,11 @@
+<h1>Welcome Citizen Journalist</h1>
+
+Here's what's trending today around the globe
+<%=@location.contents.each do |content| %>
+    <h3><%= link_to "#{content.content_url}", location %></h3>
+<% end %>
+
+Pick your preferred city
+<%=@locations.each do |location| %>
+    <h3><%= link_to "#{location.name}", location %></h3>
+<% end %>
