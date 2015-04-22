@@ -1,3 +1,10 @@
+<% if session[:access_token] %>
+  <%= link_to "Logout #{session[:user_name]}", '/logout' %>
+<% else %>
+  <%= link_to 'login with instagram', '/oauth/connect' %>
+<% end %>
+
+
 <h1>Welcome Citizen Journalist</h1>
 
 Pick your preferred city
