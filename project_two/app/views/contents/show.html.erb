@@ -1,4 +1,4 @@
-<section class="content-display">
+<center><section class="content-display">
   <h3> Your <%= @location %> User Generated News</h3>
   <ul>
     <% @location.contents.each do |content| %>
@@ -7,4 +7,4 @@
       <li><a href=<%= content_url %>><img src=<%= content_image %>></a></li>
     <% end %>
   </ul>
-</section>
+</section></center>
