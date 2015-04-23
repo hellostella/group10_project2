@@ -26,3 +26,11 @@
     <% end %></ul></center>
   </ul>
 </section>
+<section class= "tweets"> Breaking Tweets
+
+  <ul>
+    <% Tweet.breaking(@location).each do |tweet|%>
+      <li><%=  tweet.text %></li>
+    <% end %>
+  </ul>
+</section>

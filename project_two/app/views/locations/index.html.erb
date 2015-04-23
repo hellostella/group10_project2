@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Take Two</h1>
 
 
@@ -11,22 +12,35 @@
 
 	</ul>
 </div>
+=======
+<% if session[:access_token] %>
+  <%= link_to "Logout #{session[:user_name]}", '/logout' %>
+<% else %>
+  <%= link_to 'login with instagram', '/oauth/connect' %>
+<% end %>
+
+
+<h1>Welcome Citizen Journalist</h1>
+
+
+Your City
+<% @locations.each do |location| %>
+  <h3><%= link_to location.name, location %></h3>
+<% end %>
+>>>>>>> 27de30b6d81477a3e00a5c0ba97649d5cff65bf2
 
 <p> Top Topics </p>
-
-
-    <span class="top"></span>
-    <span class="bottom"></span>
+  <span class="top"></span>
+  <span class="bottom"></span>
 </div>
 
 <div class="hexagons">
-<% @contents = Content.all %>
-<% @contents.each do |content| %>
-  
-  <% content_url = content.content_url %>
-  <% content_image = content.image_url %>
-  <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
+  <% @contents = Content.all %>
+  <% @contents.each do |content| %>
 
-<% end %>
+    <% content_url = content.content_url %>
+    <% content_image = content.image_url %>
+    <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
+
+  <% end %>
 </div>
-  

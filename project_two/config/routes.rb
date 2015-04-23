@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :locations
   resources :contents
- 
 
-  
+
+
   # get '/', to: 'locations#index'
   get '/oauth/connect', to: 'locations#connect'
   get '/oauth/callback', to: 'locations#callback'

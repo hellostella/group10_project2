@@ -6,12 +6,17 @@ Instagram.configure do |config|
 	config.client_secret = ENV['client_secret']
 end
 
-
+config = {
+  consumer_key:    "Mj1JlleheSRHom7P5EwEk2ohl",
+  consumer_secret: "kIAWQZL6ANBN2QxpFBzMOvDLiakXT2WXz6bhCjnFdEBzVK74Hs",
+  access_token:    "3064794945-6R3r74kDYgFuOlUFvmEyVNcBqVW8fbcWPqDTIvf",
+  access_token_secret: "Puovcmp3xVk9ExIDJ8uH5qKqqPRjFEGyHU21cuQxSMH17",
+}
 class LocationsController < ApplicationController
 
     def index
-
-        @locations = Location.all
+       @locations = Location.all
+       @tweet = Twitter::REST::Client.new(config)
     end
 
     def show
