@@ -69,7 +69,7 @@ seattle_content = Location.find_by(name: "Seattle").contents.create!([
   {author: 'Rickie Fowler', content_url: 'http://www.seattletimes.com/sports/nba/study-seattle-not-quite-ready-financially-to-take-on-an-nhl-team/', image_url: 'https://a.thumbs.redditmedia.com/6kPdetuENBQ2Cb45lwDK9Ww1WxKuNfyJiujaWzLONh8.jpg'},
   {author: 'Andy Kim', content_url: 'http://www.seattletimes.com/business/economy/perfect-mix-paved-way-to-boom/', image_url: 'https://b.thumbs.redditmedia.com/d_rn-qq_pdkWp51eSAIFcqcHaiWv-UnZtRCs78CmFss.jpg'},
   {author: 'Adam Bray', content_url: 'http://www.theatlantic.com/national/archive/2015/04/on-the-making-of-downtowns-from-fresno-to-seattle-to-shanghai/390873/', image_url: 'https://b.thumbs.redditmedia.com/m1ZyzbnGaeceP23qi0J4Fi4SU8Xw5HentG12v64Tu1A.jpg'},
- 
+
   ])
 
 los_angeles_content = Location.find_by(name: "Los Angeles").contents.create!([

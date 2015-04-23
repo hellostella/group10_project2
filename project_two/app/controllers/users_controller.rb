@@ -10,7 +10,7 @@
 # class UsersController < ApplicationController
 
 # 	def index
-	
+
 # 	end
 
 # 	def connect
@@ -28,6 +28,6 @@
 # 		session.clear
 # 		redirect_to '/'
 # 	end
-	
+
 
 # end
