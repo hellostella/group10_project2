@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :contents
  
 
-  root 'locations#index'
+  
   # get '/', to: 'locations#index'
   get '/oauth/connect', to: 'locations#connect'
   get '/oauth/callback', to: 'locations#callback'
