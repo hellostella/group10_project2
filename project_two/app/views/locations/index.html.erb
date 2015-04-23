@@ -1,18 +1,26 @@
-<center>><h1>Welcome Citizen Journalist</h1>
+<h1>Take Two</h1>
 
-Pick your preferred city
+Your City
 <% @locations.each do |location| %>
     <h3><%= link_to location.name, location %></h3>
+
 <% end %>
 
-<p> Content </p>
+<p> Top Topics </p>
+
+
+    <span class="top"></span>
+    <span class="bottom"></span>
+</div>
+
+<div class="hexagons">
 <% @contents = Content.all %>
 <% @contents.each do |content| %>
-<ul>
-  <li>
+  
   <% content_url = content.content_url %>
   <% content_image = content.image_url %>
-  <a href=<%= content_url %>><img src=<%= content_image %>></a>
-  </li>
-</ul></center>
-  <% end %>
+  <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
+
+<% end %>
+</div>
+  

@@ -19,7 +19,7 @@ Boston = Location.create!([{name: 'Boston'}])
 
 
 new_york_content = Location.find_by(name: "New York").contents.create!([
-  {author: 'Marguerite Preston', content_url: 'http://ny.eater.com/2015/4/20/8456281/two-major-cinema-chains-want-to-serve-alcohol-in-nyc-theaters', image_url: 'https://cdn1.vox-cdn.com/thumbor/Wzqdl_NtvfkKDxTKg8ZSy0biSsk=/0x0:1024x768/1200x900/cdn0.vox-cdn.com/uploads/chorus_image/image/46168422/1024px-Interno_di_un_sala_da_cinema.0.0.JPG'},
+
   {author: 'Mark Messier', content_url: 'https://www.youtube.com/watch?v=yVzAC7mLxJw', image_url: 'http://b.thumbs.redditmedia.com/esV8gUZIJT0X3ki7uyM-JgREse3vDtu0VyuxAhJxWhk.jpg'},
   {author: 'Carl Hagelin', content_url: 'http://www.nydailynews.com/new-york/nyc-crime/3-dead-23-wounded-21-shootings-weekend-article-1.2192449', image_url: 'http://a.thumbs.redditmedia.com/grKMUIVG0I-SERytHBdwfu-nfBqsUKBbrW6OPofprd0.jpg'},
   {author: 'Mike Richter', content_url: 'http://www.scoutingny.com/the-ramones-guide-to-new-york-city/', image_url: 'http://b.thumbs.redditmedia.com/iwNmq6d5oONz3ZnF_AoSOBCdV6wnzeT-gKIZaUNMWDY.jpg'},
@@ -63,14 +63,13 @@ san_francisco_content = Location.find_by(name: "San Francisco").contents.create!
   ])
 
 seattle_content = Location.find_by(name: "Seattle").contents.create!([
-  {author: 'Jason Dufner', content_url: 'http://i.imgur.com/KovoZeT.jpg', image_url: 'http://i.imgur.com/KovoZeT.jpg'},
   {author: 'Jordan Spieth', content_url: 'http://www.seattletimes.com/seattle-news/marijuana/average-price-of-legal-pot-drops-to-about-12-a-gram/', image_url: 'https://b.thumbs.redditmedia.com/c4D5lw1HusWaP7HHa9hyDofxXjYImhjRohD5oEeS-tE.jpg'},
   {author: 'Jim Furyk', content_url: 'https://youtu.be/w9K_ZWnsvxo', image_url: 'https://b.thumbs.redditmedia.com/en7HwtfQfNuPxbQcwCJ6crMZMay6I6CrA5VN9t9ZyVM.jpg'},
   {author: 'Vijay Sing', content_url: 'http://www.seattlepi.com/local/article/Survey-Puget-Sound-s-worst-commutes-6211946.php', image_url: 'https://b.thumbs.redditmedia.com/mRuHpHY1HDw3OBOh18lDv3A5-WXRuuSyZzxz_EMzUZQ.jpg'},
   {author: 'Rickie Fowler', content_url: 'http://www.seattletimes.com/sports/nba/study-seattle-not-quite-ready-financially-to-take-on-an-nhl-team/', image_url: 'https://a.thumbs.redditmedia.com/6kPdetuENBQ2Cb45lwDK9Ww1WxKuNfyJiujaWzLONh8.jpg'},
   {author: 'Andy Kim', content_url: 'http://www.seattletimes.com/business/economy/perfect-mix-paved-way-to-boom/', image_url: 'https://b.thumbs.redditmedia.com/d_rn-qq_pdkWp51eSAIFcqcHaiWv-UnZtRCs78CmFss.jpg'},
   {author: 'Adam Bray', content_url: 'http://www.theatlantic.com/national/archive/2015/04/on-the-making-of-downtowns-from-fresno-to-seattle-to-shanghai/390873/', image_url: 'https://b.thumbs.redditmedia.com/m1ZyzbnGaeceP23qi0J4Fi4SU8Xw5HentG12v64Tu1A.jpg'},
-  {author: 'Tyler Brooks', content_url: 'http://i.imgur.com/0etbkBs.jpg', image_url: 'http://i.imgur.com/0etbkBs.jpg'}
+ 
   ])
 
 los_angeles_content = Location.find_by(name: "Los Angeles").contents.create!([
@@ -80,15 +79,12 @@ los_angeles_content = Location.find_by(name: "Los Angeles").contents.create!([
   {author: 'Diego Costa', content_url: 'http://www.ethanelkind.com/santa-monica-takes-big-step-backward-to-keep-out-new-residents/', image_url: 'https://b.thumbs.redditmedia.com/4eyM90hot6sdRfAux9G-jIzpT98xbsyfvyycSfY8oeg.jpg'},
   {author: 'Brian Parker', content_url: 'http://www.latimes.com/local/lanow/la-me-ln-south-la-could-be-renamed-sola-by-city-in-image-makeover-20150421-story.html', image_url: 'https://b.thumbs.redditmedia.com/vhmfPZSdw2wcGBe00TdvFsZAJXOEtpWcFvgvy8LF4Wg.jpg'},
   {author: 'Tim Tebow', content_url: 'http://www.latimes.com/entertainment/arts/la-et-cm-99-seat-theater-vote-20150421-story.html', image_url: 'https://a.thumbs.redditmedia.com/H46Q1ArEY1FsLkvX2lhc1Z4YTPTZUprJBKDjJbgflm8.jpg'},
-  {author: 'Tom Brady', content_url: 'http://www.marketwatch.com/story/california-dreamin-shake-shack-to-open-first-location-in-los-angeles-in-2016-2015-04-21?reflink=MW_news_stmp', image_url: 'http://static1.squarespace.com/static/5384f540e4b0e4ff89109e98/t/55146b95e4b05c72e7ea3580/1427401622464/HHH1+-+EmpireSzechuan_ShakeShack_Logo.jpg'},
   {author: ' Philip Rivers', content_url: 'http://urbanize.la/post/half-finished-la-brea-project-gets-redesign', image_url: 'https://b.thumbs.redditmedia.com/rxsQj28eKGX52nnnUeERmg5FlU-8NnId09E-EpoPmXw.jpg'}
   ])
 
 boston_content = Location.find_by(name: "Boston").contents.create!([
   {author: 'Peter Crouch', content_url: 'http://www.myfoxboston.com/story/28845794/cambridge-officer-arrested-placed-on-administrative-leave', image_url: 'https://scontent-iad.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10250120_10153007361508122_1597571003703505121_n.jpg?oh=eaaba155e8022b409b92148a61003654&oe=559A7F3B'},
   {author: 'Alexis Sanchez', content_url: 'http://iffboston.org/2015-films/', image_url: 'http://b.thumbs.redditmedia.com/r33uBd1N0_roxigsCnkjEZkg_jCesTZFDWOWMxZQ86o.jpg'},
-  {author: 'Thibealt Courtious', content_url: 'http://i.imgur.com/EY7r5GK.jpg', image_url: 'http://i.imgur.com/8tVtW4o.jpg'},
-  {author: 'Juan Mata', content_url: 'http://www.myfoxboston.com/story/28850088/bombing-survivor-rebekah-gregory-completes-2015-boston-marathon', image_url: 'http://b.thumbs.redditmedia.com/WDU0VRsEXt-m2KCrOXwl2Dlr2vEwdvecJBWTbCUJ16M.jpg'},
   {author: 'Eden Hazard', content_url: 'http://deadspin.com/behind-the-photo-that-changed-the-boston-marathon-forev-1698054488', image_url: 'http://b.thumbs.redditmedia.com/zlI4Vf14K5Vj079fQm_00hXLaLE-lqR11cprXjzT9Hs.jpg'},
   {author: 'Didier Drogba', content_url: 'http://www.boston.com/news/local/massachusetts/2015/04/21/trespasser-rescued-arrested-after-getting-lost-inside-ted-williams-tunnel-walls/HsIggwB8v35tcBDm7VfqZL/story.html?p1=feature_stack_2_hp', image_url: 'http://b.thumbs.redditmedia.com/GLjpYyKbDZnCJHXu_q9iNefPR1h2-ekct6Bvb6mDSAQ.jpg'},
   {author: 'John Terry', content_url: 'http://boston.cbslocal.com/2015/04/19/t-will-be-free-this-friday/', image_url: 'http://b.thumbs.redditmedia.com/OEhs1izbP2bcMDrjEXDluOH8eXnsSy81g1TQsPePPuA.jpg'},

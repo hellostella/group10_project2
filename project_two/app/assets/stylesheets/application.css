@@ -1,15 +1,107 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
-*/
+body{
+  background: #green;
+  padding: 30px;
+  text-align:right;
+}
+
+.main{
+  border: 4px solid #6c6c6c;
+  color: #FC6400;
+  font-family: monospace;, "Times New Roman", serif;
+}
+
+.header-nav a,
+footer a{
+  color: #FC6400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  padding:30px 10px;
+  display: table-row;
+}
+
+.header-nav .active{
+  color: #FC6400;
+  text-decoration: none;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1, 
+.header-nav,
+footer{
+  text-align: center;
+}
+
+footer a{
+  border-right: 1px solid #ccc;
+}
+
+section{
+  border-color:#8E8E8E;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  line-height: 1.5;
+}
+
+img{
+/*  border: 1px solid #8e8e8e;
+  float:right;
+  padding: 5px;
+  margin-left: 20px;*/
+}
+
+.hexagons a {
+	display:inline-block;
+	width:120px;
+	height:90px;
+	background-size:cover;
+	background-position:center center;
+	border-radius:10px;
+	margin:10px;
+	box-shadow:0px 0px 10px 1px #333;
+}
+
+ /*body {
+    > li {
+      background-color: ;
+      @include background-image( linear-gradient(to left, #FFF, #F4F5F7) );
+      float: left;
+      font-family: $lucida-grande;
+      position: relative;
+      @include transition( all 0.8s );
+
+      &::after {
+        content: " ";
+        height: 23px;
+        @include position( absolute, 10px -13px 0 0 );
+        @include transform( rotate(45deg) skew(20deg, 30deg) );
+        width: 23px;
+      }
+    }
+  }
+
+
+h1 {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+
+section {
+  background-color: red;
+  background-image: -webkit-linear-gradient(bottom, blue, orange);
+  background-image:         linear-gradient(to top, red, orange);
+}
+
+
+h2 {
+  font-family: $helvetica;
+  font-size: golden-ratio(14px,  1);
+}*/

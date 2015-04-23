@@ -5,8 +5,12 @@
   <ul>
     <% @location.contents.each do |content| %>
     <% content_url = content.content_url %>
+    <div class="hexagon pic">
+    <span class="top"></span>
+    <span class="bottom"></span>
+</div>
     <% content_image = content.image_url %>
-      <li><a href=<%= content_url %>><img src=<%= content_image %>></a></li>
+      <a href=<%= content_url %>><img src=<%= content_image %>></a>
     <% end %></ul></center>
   </ul>
 </section>
