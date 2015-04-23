@@ -2,18 +2,39 @@
 
 <section class="content-display">
   <h3> Your <%= @location.name %> User Generated News</h3>
+<<<<<<< HEAD
   <% contents = Content.where(location_id: @location.id) %>
 
     <div class="hexagons">
 <% contents.each do |content| %>
+=======
+  <ul>
+    <% @location.contents.each do |content| %>
+    <% content_url = content.content_url %>
 
-  <% content_url = content.content_url %>
-  <% content_image = content.image_url %>
-  <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
+>>>>>>> 38817c4fbdf1a2474cb3cb2d866952fdb3f1d17a
 
+<div class="hexagons">
+  <% @contents = Content.all %>
+    <% @contents.each do |content| %>
+
+      <% content_url = content.content_url %>
+        <% content_image = content.image_url %>
+          <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
 <% end %>
 </div>
+<<<<<<< HEAD
 
+=======
+    <span class="top"></span>
+    <span class="bottom"></span>
+
+    <% content_image = content.image_url %>
+      <a href=<%= content_url %>><img src=<%= content_image %>></a>
+    <% end %></ul></center>
+  </ul>
+</section>
+>>>>>>> 38817c4fbdf1a2474cb3cb2d866952fdb3f1d17a
 <section class= "tweets"> Breaking Tweets
 
   <ul>
@@ -23,3 +44,12 @@
     <% end %>
   </ul>
 </section>
+<section class= "instagram"> Top Pictures from around <%= @location.name %>
+<ul>
+  <% Insta.location_tag(@location.name).each do |instagram| %>
+    <li> <% insta_img = instagram.images["standard_resolution"]["url"] %>
+    <img src = "<%= instagram.images["standard_resolution"]["url"] %>">
+    </li>
+
+    <% end %>
+  </ul>
