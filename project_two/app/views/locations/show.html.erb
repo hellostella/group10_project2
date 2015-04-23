@@ -5,7 +5,7 @@
   <ul>
     <% @location.contents.each do |content| %>
     <% content_url = content.content_url %>
-    
+
 
     <div class="hexagons">
 <% @contents = Content.all %>
@@ -34,3 +34,12 @@
     <% end %>
   </ul>
 </section>
+
+<ul>
+  <% Insta.location_tag(@location).each do |instagram| %>
+    <li> <% insta_img = instagram.images["standard_resolution"]["url"] %>
+    <img src = "<%= instagram.images["standard_resolution"]["url"] %>">
+    </li>
+
+    <% end %>
+  </ul>
