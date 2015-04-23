@@ -7,17 +7,15 @@
     <% content_url = content.content_url %>
 
 
-    <div class="hexagons">
-<% @contents = Content.all %>
-<% @contents.each do |content| %>
+<div class="hexagons">
+  <% @contents = Content.all %>
+    <% @contents.each do |content| %>
 
-  <% content_url = content.content_url %>
-  <% content_image = content.image_url %>
-  <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
-
+      <% content_url = content.content_url %>
+        <% content_image = content.image_url %>
+          <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
 <% end %>
 </div>
-
     <span class="top"></span>
     <span class="bottom"></span>
 
@@ -34,9 +32,9 @@
     <% end %>
   </ul>
 </section>
-
+<section class= "instagram"> Top Pictures from around <%= @location.name %>
 <ul>
-  <% Insta.location_tag(@location).each do |instagram| %>
+  <% Insta.location_tag(@location.name).each do |instagram| %>
     <li> <% insta_img = instagram.images["standard_resolution"]["url"] %>
     <img src = "<%= instagram.images["standard_resolution"]["url"] %>">
     </li>
