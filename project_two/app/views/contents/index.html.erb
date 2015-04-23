@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+
+<h1>Take Two</h1>
+
+
+<div class="city">
+	<ul>
+
+	<% @locations.each do |location| %>
+	    <li><%= link_to location.name, location %></li>
+
+	<% end %>
+
+	</ul>
+</div>
+
+<p> Trending </p>
+
+    <span class="top"></span>
+    <span class="bottom"></span>
+</div>
+
+<div class="hexagons">
+<% @contents = Content.each %>
+<% @contents.each do |content| %>
+
+  <% content_url = content.content_url %>
+  <% content_image = content.image_url %>
+  <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
+
+<% end %>
+</div>
+</html>

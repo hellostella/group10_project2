@@ -1,21 +1,16 @@
-<<<<<<< HEAD
 <h1>Take Two</h1>
-=======
-<% if session[:access_token] %>
-  <%= link_to "Logout #{session[:user_name]}", '/logout' %>
-<% else %>
-  <%= link_to 'login with instagram', '/oauth/connect' %>
-<% end %>
 
 
-<h1>Welcome Citizen Journalist</h1>
->>>>>>> c03c0c8dff7605f76c274477667d5ec7a8066bbf
+<div class="city">
+	<ul>
+	
+	<% @locations.each do |location| %>
+	    <li><%= link_to location.name, location %></li>
 
-Your City
-<% @locations.each do |location| %>
-    <h3><%= link_to location.name, location %></h3>
+	<% end %>
 
-<% end %>
+	</ul>
+</div>
 
 <p> Top Topics </p>
 
