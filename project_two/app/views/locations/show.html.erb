@@ -19,8 +19,8 @@
 
 <ul>
   <% Insta.location_tag(@location).each do |instagram| %>
-    <li> <% insta_img = instagram.images["standard_resolution"]["url"] %>
-    <img src = "<%= instagram.images["standard_resolution"]["url"] %>">
+    <li> <% insta_img = instagram.images["thumbnail"]["url"] %>
+    <img src = "<%= instagram.images["thumbnail"]["url"] %>">
     </li>
 
     <% end %>
