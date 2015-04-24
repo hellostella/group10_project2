@@ -8,6 +8,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <p> <%= link_to 'Sign-in or Sign Up', new_user_session_path, :method => :create %> </p>
+  <p> <%= link_to 'Sign-Out', destroy_user_session_path, :method => :create %> </p>
+  <div class="banner">
+  <img src="http://sharahmak.com/wp-content/uploads/2014/08/we-are-citizen-journalism.jpg"  style="width: strech, height: 25 ">
+  </div> <!-- ending banner -->
+  <p><%= link_to 'Home', root_path %> </p>
 
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
@@ -18,7 +24,5 @@
 
 
 <%= yield %>
-<h3> <%= link_to 'Sign-in or Sign Up', new_user_session_path, :method => :create %> </h3>
-<h3> <%= link_to 'Sign-Out', destroy_user_session_path, :method => :create %> </h3>
 </body>
 </html>
