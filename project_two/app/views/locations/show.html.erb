@@ -1,0 +1,27 @@
+
+<center><h1><%= @location.name %></h1>
+
+   <div class="hexagons">
+ <% @location.contents.each do |content| %>
+ <% content_url = content.content_url %>
+ <% content_image = content.image_url %>
+ <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"></a>
+<% end %>
+</div>
+
+<section class= "tweets"> Breaking Tweets
+  <ul>
+    <% Tweet.breaking(@location).each do |tweet|%>
+      <li><%=  tweet.text %></li>
+    <% end %>
+  </ul>
+</section>
+
+<ul>
+  <% Insta.location_tag(@location).each do |instagram| %>
+    <li> <% insta_img = instagram.images["standard_resolution"]["url"] %>
+    <img src = "<%= instagram.images["standard_resolution"]["url"] %>">
+    </li>
+
+    <% end %>
+  </ul>
