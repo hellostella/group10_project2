@@ -11,8 +11,10 @@
 
 <section class= "tweets"> Breaking Tweets
   <ul>
+    <img src = http://i.imgur.com/RO4eDX4.png >
+
     <% Tweet.breaking(@location).each do |tweet|%>
-      <li><%=  tweet.text %></li>
+      <div> ***<%=  tweet.text %> **</div >
     <% end %>
   </ul>
 </section>

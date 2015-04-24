@@ -1,5 +1,5 @@
 body{
-  background: #F4F5F7;
+  background: white;
   padding: 30px;
   text-align:center;
 
@@ -24,7 +24,7 @@ body{
 .header-nav a,
 footer a{
   color: #FC6400;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lobster', cursive;
   font-weight:bold;
   display: ;
 }
@@ -35,7 +35,7 @@ footer a{
 }
 
 h2{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lobster', cursive;
 
 }
 
@@ -70,29 +70,30 @@ img{
 }
 
 h1 { color: #adb7bd;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lobster', cursive;
   font-size: 54px;
   font-weight: 300;
   line-height: 58px;
    }
 
 p { color: #adb7bd;
-  font-family: 'Lucida Sans',
-  Arial, sans-serif;
+  font-family: 'Lobster', cursive;
   font-size: 16px;
   line-height: 26px;
   text-indent: 30px;
   margin: 0; }
 
-a { text-decoration:
-  underline; }
+a {
+  font-family: 'Lobster', cursive;
+ }
 
 a:hover { color: #ffffff }
 
-.date { background: #fe921f;
+.date {
+  background: #fe921f;
   color: #ffffff;
   display: inline-block;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lobster', cursive;
   font-size: 12px;
   font-weight: bold;
   line-height: 12px;
@@ -124,46 +125,7 @@ a:hover { color: #ffffff }
 }
 
 .tweets {
+
 	font-weight:bold;
   text-align: center;
 }
-
-
-
- /*body {
-    > li {
-      background-color: ;
-      @include background-image( linear-gradient(to left, #FFF, #F4F5F7) );
-      float: left;
-      font-family: $lucida-grande;
-      position: relative;
-      @include transition( all 0.8s );
-
-      &::after {
-        content: " ";
-        height: 23px;
-        @include position( absolute, 10px -13px 0 0 );
-        @include transform( rotate(45deg) skew(20deg, 30deg) );
-        width: 23px;
-      }
-    }
-  }
-
-
-h1 {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
-}
-
-
-section {
-  background-color: red;
-  background-image: -webkit-linear-gradient(bottom, blue, orange);
-  background-image:         linear-gradient(to top, red, orange);
-}
-
-
-h2 {
-  font-family: $helvetica;
-  font-size: golden-ratio(14px,  1);
-}*/
