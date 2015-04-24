@@ -16,7 +16,7 @@
 
 
 
-<h1>We Are Media</h1>
+
 
 
 <div class="city">
@@ -46,14 +46,9 @@
 <div class="hexagons">
   <% @contents = Content.all %>
   <% @contents.each do |content| %>
-
     <% content_url = content.content_url %>
     <% content_image = content.image_url %>
     <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
 
   <% end %>
 </div>
-
-
-
-
