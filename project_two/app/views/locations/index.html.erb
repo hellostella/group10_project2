@@ -9,26 +9,36 @@
 </ul>
 
 
-<h1>Take Too</h1>
+
+<div class="banner">
+<img src="http://sharahmak.com/wp-content/uploads/2014/08/we-are-citizen-journalism.jpg"  style="width: strech, height: 25 ">
+</div> <!-- ending banner -->
+
+
+
+<h1>We Are Media</h1>
 
 
 <div class="city">
-	<ul>
+  <ul>
 
-	<% @locations.each do |location| %>
-	    <li><%= link_to location.name, location %></li>
+  <% @locations.each do |location| %>
+      <li><%= link_to location.name, location %></li>
 
-	<% end %>
+  <% end %>
 
-	</ul>
+  </ul>
 </div>
 
+<% if session[:access_token] %>
+  <%= link_to "Logout #{session[:user_name]}", '/logout' %>
+<% else %>
+<% end %>
 
 
 
 
-
-<p> Top Topics </p>
+<p> Your Topics </p>
   <span class="top"></span>
   <span class="bottom"></span>
 </div>
@@ -43,3 +53,7 @@
 
   <% end %>
 </div>
+
+
+
+
