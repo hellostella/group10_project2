@@ -7,4 +7,4 @@ Things you may want to cover:
 * 1st Build (initial build) - https://dry-brook-3255.herokuapp.com/locations
 * 2nd Build - https://warm-eyrie-5697.herokuapp.com/
 * 3rd Build - https://fierce-beach-6393.herokuapp.com/
-* Final Build- https://floating-hollows-6678.herokuapp.com/
+* Final Build- https://godrics-hollow-6678.herokuapp.com/
