@@ -1,31 +1,22 @@
-
-
-
-
 <div class="city">
-  <ul>
-
+<ul>
   <% @locations.each do |location| %>
       <li><%= link_to location.name, location %></li>
-
   <% end %>
+</ul>
 
-  </ul>
 </div>
-
-<% if session[:access_token] %>
-  <%= link_to "Logout #{session[:user_name]}", '/logout' %>
-<% else %>
-<% end %>
-
-
-
+  <% if session[:access_token] %>
+    <%= link_to "Logout #{session[:user_name]}", '/logout' %>
+  <% else %>
+  <% end %>
 
 <p> Your Topics </p>
   <span class="top"></span>
   <span class="bottom"></span>
 </div>
 
+<!-- # Show contents filtered by specific city as image - link to source article  -->
 <div class="hexagons">
   <% @contents = Content.all %>
   <% @contents.each do |content| %>

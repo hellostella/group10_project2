@@ -1,28 +1,10 @@
-== README
+== We Are Media
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We Are Media is a centralized news hub bringing you user generating reports
+of what is happening around you
 
 Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* 1st Build (initial build) - https://dry-brook-3255.herokuapp.com/locations
+* 2nd Build - https://warm-eyrie-5697.herokuapp.com/
+* 3rd Build - https://fierce-beach-6393.herokuapp.com/
+* Final Build- https://floating-hollows-6678.herokuapp.com/

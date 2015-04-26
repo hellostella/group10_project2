@@ -1,5 +1,5 @@
 class Insta
-  
+
 
   def self.location_tag (location)
     Instagram.client_id = "03fb56bc7c104bfc86512ef66f527dd9"

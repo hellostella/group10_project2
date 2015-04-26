@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-
-
-
-<ul id="Hr-1">
-<li><a href="http://www.problogtricks.com" title="Home: Pro Blog Tricks">Home</a></li>
-<li><a href="#">Freebies</a></li>
-<li><a href="#">Widgets</a></li>
-<li><a href="#">Templates</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Advertise</a></li>
-</ul>
-
-
 <div class="city">
 	<ul>
-
 	<% @locations.each do |location| %>
 	    <li><%= link_to location.name, location %></li>
-
 	<% end %>
-
 	</ul>
 </div>
-
 <p> Trending </p>
-
     <span class="top"></span>
     <span class="bottom"></span>
 </div>
 
+<!-- # display all contents from each city as image linking to source article -->
 <div class="hexagons">
-<% @contents = Content.each %>
-<% @contents.each do |content| %>
-
-  <% content_url = content.content_url %>
-  <% content_image = content.image_url %>
-  <a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
-
+	<% @contents = Content.each %>
+		<% @contents.each do |content| %>
+  		<% content_url = content.content_url %>
+  			<% content_image = content.image_url %>
+  				<a href=<%= content_url %> style="background-image:url('<%= content_image %>')"</a>
 <% end %>
 </div>
 </html>
