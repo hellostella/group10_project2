@@ -9,5 +9,5 @@ class ContentsController < ApplicationController
 
   end
 
-
+# just wanted to note that theres only read functionality for the contents controller, what was the rationale behind this decision?
 end

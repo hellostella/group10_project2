@@ -24,13 +24,13 @@
     z-index: 2;
     position: relative;
     border-radius: 5px;
-    
+
     -moz-transform: scale(1,0.8);
     -ms-transform: scale(1,0.8);
     -webkit-transform: scale(1,0.8);
     -o-transform: scale(1,0.8);
     transform: scale(1,0.8);
-    
+
     color: #FFF;
     text-align: center;
     line-height: 72px;
@@ -45,9 +45,9 @@
     z-index: -1;
     left: 50%; margin-left: -35px;
     position: absolute;
-    
+
     border-radius: 5px;
-    
+
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -85,3 +85,4 @@
     -o-transform: scale(1,-1.25);
     transform: scale(1,-1.25);
 }
+// whoa! what is all this?!

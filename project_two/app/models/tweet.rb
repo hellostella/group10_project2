@@ -12,5 +12,5 @@ class Tweet
     client = Twitter::REST::Client.new(config)
     client.search("to: #{location.name} breaking", :result_type => "recent").take(tweet_limit)
   end
-
+# where is this model being used in this application?
 end

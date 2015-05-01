@@ -7,3 +7,5 @@ class CreateLocations < ActiveRecord::Migration
     end
   end
 end
+
+# cool migrations look good

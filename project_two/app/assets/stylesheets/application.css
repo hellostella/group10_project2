@@ -1,3 +1,5 @@
+/* i wanna note here that you got rid of that commented code that comes here by default, i'll talk about it when we do our review */
+
 body{
   background: white;
   padding: 30px;
@@ -69,6 +71,7 @@ img{
 
 }
 
+/* you've already got a h1 selector! */
 h1 { color: #adb7bd;
   font-family: 'Lobster', cursive;
   font-size: 54px;
