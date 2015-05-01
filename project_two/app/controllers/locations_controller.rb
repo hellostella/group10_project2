@@ -34,3 +34,6 @@ class LocationsController < ApplicationController
 		end
 
 end
+# cool i like this use of session, why did you guys decide to use sessions instead of user auth?
+# additionally i also like how you made custom controller actions here for connect and callback, good use of figaro here as well
+# you also only have read functionality in this controller as well

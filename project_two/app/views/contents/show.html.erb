@@ -2,6 +2,7 @@
   <section class="content-display">
 <h3> <%= @location.name %> Trending</h3>
 <ul> <!-- # Sort contents by location - display as images  -->
+  <!-- some indentation issues here, we want to keep our database queries in the controller and not the view -->
     <% @location.contents.each do |content| %>
       <% content_url = content.content_url %>
         <span class="top"></span>

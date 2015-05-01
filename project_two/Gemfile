@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+# im curious what you ended up using sinatra/sass gems for?
 gem 'sass', '~> 3.4.13'
 gem 'twitter'
 gem 'pry'

@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+# damn look at this seed file! thats a lot of content, who coded this?!
 Location.destroy_all
 
 New_York = Location.create!([{name: 'New York'}])

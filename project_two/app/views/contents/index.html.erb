@@ -14,6 +14,7 @@
 
 <!-- # display all contents from each city as image linking to source article -->
 <div class="hexagons">
+	<!-- i'm wondering what Content.each does here on line 18, also some indentation issues here -->
 	<% @contents = Content.each %>
 		<% @contents.each do |content| %>
   		<% content_url = content.content_url %>
